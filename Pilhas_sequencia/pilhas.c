@@ -10,6 +10,7 @@ Pilha *criar(){
    }
    pilha->topo= MAX;
    return pilha;
+
 }
 int remover(Pilha *pilha){
   if(vazia(pilha)){
@@ -39,7 +40,7 @@ int cheia(Pilha *pilha){
     return(pilha->topo == 0);
 }
 void mostrar(Pilha *pilha){
-   if(vazia(pilha) || cheia(pilha)){
+   if(vazia(pilha)){
       printf("Pilha invalida");
       return;
    }
